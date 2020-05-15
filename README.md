@@ -1,7 +1,7 @@
 
   ![License](https://img.shields.io/badge/License-MIT-blue.svg?style=plastic)
 
-# Employee List Generator
+# Employee Template Engine
 
 ## Version:
 1.0.0

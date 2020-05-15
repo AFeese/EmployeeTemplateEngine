@@ -43,7 +43,7 @@ function teamMemberOptions() {
     //Allows us to see all answers collected from the teamMemeberOptions object:
   }).then(answers => {
     teamSelection = answers;
-    console.log(answers);
+    // console.log(answers);
 
     // HINT: each employee type (manager, engineer, or intern) has slightly different
     // information; write your code to ask different questions via inquirer depending on
@@ -55,17 +55,28 @@ function teamMemberOptions() {
         {
           type: "input",
           name: "name",
-          message: "What is your manager's name?"
-        },
+          message: "What is your manager's name?",
+        //   validate: function(name){
+        //     var done = this.async();
+        //     setTimeout(function() {
+        //       if (typeof name !== "name") {
+        //       done("you need to provide a name");
+        //       return;
+        //     }
+        //     done(true);
+        //   }, 3000);
+        // },
+      },
+        
         {
           type: "input",
           name: "id",
-          message: "What is your manager's id number?",
+          message: "What is your manager's id number?"
         },
         {
           type: "input",
           name: "email",
-          message: "What is your manager's email?",
+          message: "What is your manager's email?"
         },
         {
           type: "input",
@@ -78,7 +89,7 @@ function teamMemberOptions() {
         const manager = new Manager(answers.name, answers.id, answers.email, answers.office);
 
         //pushes answers from Manager to the employee array
-        console.log(manager);
+        // console.log(manager);
         teamArray.push(manager);
         teamMemberOptions();
       })
@@ -102,12 +113,12 @@ function teamMemberOptions() {
         {
           type: "input",
           name: "id",
-          message: "What is your Engineer's id number?",
+          message: "What is your Engineer's id number?"
         },
         {
           type: "input",
           name: "email",
-          message: "What is your Engineer's email?",
+          message: "What is your Engineer's email?"
         },
         {
           type: "input",
@@ -120,7 +131,7 @@ function teamMemberOptions() {
         const engineer = new Engineer(answers.name, answers.id, answers.email, answers.github);
 
         //pushes answers from Engineer to team array
-        console.log(engineer);
+        // console.log(engineer);
         teamArray.push(engineer);
         teamMemberOptions();
       })
@@ -144,12 +155,12 @@ function teamMemberOptions() {
         {
           type: "input",
           name: "id",
-          message: "What is your Intern's id number?",
+          message: "What is your Intern's id number?"
         },
         {
           type: "input",
           name: "email",
-          message: "What is your Intern's email?",
+          message: "What is your Intern's email?"
         },
         {
           type: "input",
@@ -162,7 +173,7 @@ function teamMemberOptions() {
         const intern = new Intern(answers.name, answers.id, answers.email, answers.school);
 
         //pushes answers from Intern object to team array
-        console.log(intern);
+        // console.log(intern);
         teamArray.push(intern);
         teamMemberOptions();
       })
@@ -193,7 +204,7 @@ function teamMemberOptions() {
           console.log(err);
         }
 
-        console.log("success");
+        // console.log("success");
       });
     }
   });

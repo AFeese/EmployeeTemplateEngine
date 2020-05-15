@@ -1,0 +1,27 @@
+body, html {
+    height: 100%;
+  }
+  
+.bg {
+/* The image used */
+background-image: url("desk3.jpg");
+
+/* Full height */
+height: 100%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.myTeamBackground {
+    /* default fallback */
+background: rgb(255, 255, 255) transparent;
+/* nice browsers */
+background: rgba(255, 255, 255, 0.8);
+}
+
+.card {
+    margin: 10px;
+}

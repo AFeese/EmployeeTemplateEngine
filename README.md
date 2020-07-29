@@ -3,7 +3,7 @@
 
 # Team Template Engine
 
-<img src="templateENG.png">
+<img src="templateENG.png" alt="templateImage">
 
 ## Version:
 1.0.0
